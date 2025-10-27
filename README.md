@@ -3,12 +3,6 @@
 Skillify is an intelligent learning platform that helps users master any topic through interactive, conversational learning.
 It uses OpenAI’s language model (LLM) to explain concepts, quiz you, and adapt to your learning style — all through a simple web interface.
 
-🌐 Live Demo
-
-👉 [Add your site link here once deployed]
-
-🚀 Features
-
 💬 AI-Powered Learning – Personalized, conversational guidance powered by OpenAI.
 
 🧩 Topic-Based Lessons – Learn anything: math, science, coding, history, or languages.
