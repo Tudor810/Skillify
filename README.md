@@ -33,8 +33,6 @@ Install dependencies
 
 1. cd frontend
 2. npm install
-   
-In a different terminal
 3. cd backend
 4. npm install
 
