@@ -31,12 +31,12 @@ cd Skillify
 
 Install dependencies
 
-cd frontend
-npm install
-
+1. cd frontend
+2. npm install
+   
 In a different terminal
-cd backend
-npm install
+3. cd backend
+4. npm install
 
 Add your OpenAI API key
 Create a .env file in the project root:
