@@ -1,0 +1,151 @@
+.add-review {
+    padding: 0;
+    gap: 25px;
+}
+.add-review .top-side {
+    display: flex;
+    justify-content: space-between;
+    padding: var(--padding);
+    box-shadow: var(--card-shadow);
+    width: 100%;
+    background-color: var(--card-background);
+    color: white;
+}
+
+.company, .add-review .top-side .user-data {
+    display: flex;
+    gap:10px;
+    align-items: center;
+}
+.company img {
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.add-review .top-side .user-data img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+
+.add-review .main-side {
+    /* height: 100%; */
+    width: 100%;
+    padding: var(--padding);
+    display: flex;
+    /* align-items: center; */
+    flex-direction: column;
+    gap: 30px;
+    background-color: var(--card-lighter-background);
+}
+
+.add-review .main-side .stars {
+    display: flex;
+    gap: 25px;
+    align-self: center;
+}
+
+
+.add-review .main-side .stars .fa-star {
+    cursor: pointer;
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.add-review .main-side .review-button {
+    border: 1px solid var(--primary-color);
+    background-color: var(--card-background);
+    color: white;
+    padding-left: calc(var(--padding) * 2);
+    padding-right: calc(var(--padding) * 2);
+    box-shadow: var(--card-shadow);
+}
+.add-review .review-textarea {
+    background-color: var(--card-background);
+    color: white;
+}
+
+.add-review .review-textarea div {
+    color: white;
+}
+
+.add-review .review-textarea div fieldset {
+    border: 1px solid var(--primary-color) !important; 
+}
+.add-review-button {
+    color: white;
+    background-color: var(--secondary-color);
+    text-transform: capitalize;
+    padding-inline: var(--padding);
+}
+
+.add-review-button:hover {
+    background-color: var(--button-header-hover);
+}
+
+.add-review-button:active {
+    background-color: var(--button-header-active);
+}
+
+.reviews-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 100px ;
+    min-height: 56.7vh;
+    width: 100%;
+    margin-bottom: 50px;
+    gap: 25px;
+}
+
+.reviews-page h2 {
+    color: white;
+    text-align: center;
+}
+.reviews-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 26%);
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+}
+
+.reviews-container .review {
+    height: auto;
+}
+
+.more-reviews {
+    color: white;
+    background-color: var(--secondary-color);
+    text-transform: capitalize;
+    padding-inline: var(--padding);
+}
+
+.more-reviews:hover {
+    background-color: var(--button-header-hover);
+}
+
+.more-reviews:active {
+    background-color: var(--button-header-active);
+}
+
+
+@media screen and (max-width: 1000px) {
+    .reviews-container {
+        grid-template-columns: repeat(auto-fit, 35%);
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .reviews-container {
+        display: flex;
+        flex-direction: column;
+        width: 75%;
+    }
+}

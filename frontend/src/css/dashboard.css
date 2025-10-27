@@ -1,0 +1,132 @@
+.dashboard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.text-container {
+    text-align: center;
+}
+
+.text-container .main-text {
+    color: white;
+}
+
+.text-container .secondary-text {
+    font-size: 1rem;
+}
+
+.dashboard-categories {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.dashboard-categories .card {
+    width: 30%;
+    height: auto;
+    justify-content: flex-start;
+}
+
+
+.card .smaller {
+    width: 70%;
+}
+
+/* .coming-soon-card {
+    opacity: 0.4;
+    box-shadow: none;
+} */
+.coming-soon-card {
+    position: relative;
+}
+.coming-soon-card::before {
+    content: "";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: black;
+    opacity: 0.5;
+}
+
+.coming-soon-card::after {
+    content: "Coming soon...";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    font-weight: 700;
+    z-index: 5;
+    /* text-transform: uppercase; */
+}
+.button-container {
+    width: 100%;
+    margin-top: auto;
+}
+
+.more-button {
+    background-color: var(--card-lighter-background);
+    border: 1px solid var(--primary-color);
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.more-button:hover {
+    filter: brightness(1.2);
+}
+
+.coming-soon:hover {
+    filter: brightness(1);
+}
+
+@media screen and (max-width: 1000px) {
+    .dashboard-categories {
+        display: grid;
+        grid-template-columns: repeat(2, 45%) ;
+    }
+    .dashboard-categories .card {
+        width: 100%;
+    }
+
+    .dashboard-categories .card:last-child {
+        grid-column: span 2;
+    }
+
+    .dashboard-categories .card:last-child .main-text {
+        font-size: 2rem;
+    }
+    .dashboard-categories .card:last-child .secondary-text {
+        font-size: 1.25rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .dashboard-categories {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .dashboard-categories .card:last-child .main-text {
+        font-size: 1rem;
+    }
+    .dashboard-categories .card:last-child .secondary-text {
+        font-size: 0.75rem;
+    }
+}

@@ -1,0 +1,332 @@
+
+
+/* GET STARTED  */
+
+.get-started {
+    overflow-y: visible !important;
+    flex-direction: column;
+    display: flex;
+    gap:15px;
+}
+
+.main-get-started .login-title {
+    font-size: 1.7rem ;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    color: white;
+
+}
+
+.main-get-started .login-title span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--description-color);
+}
+.get-started .close {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    min-width: 0;
+
+}
+.get-started .close:active {
+    background-color: rgba(0,0,0,0.1);
+}
+.get-started .close {
+
+    color: white;
+    font-size: 1.4rem;
+}
+
+
+.get-started .login-link {
+    width: 100%;
+}
+
+.get-started .email-button {
+    position: static;
+    width: 100%;
+    height: auto;
+    border-radius: 0;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: white;
+    background-color: var(--card-background);
+    /* padding: var(--padding); */
+    border-radius: var(--border-radius );
+    border: 1px solid var(--primary-color);
+}
+
+.terms-agree {
+    color: var(--description-color);
+}
+.terms-agree a {
+  color: var(--description-color);
+   text-decoration: underline;
+   transition: all 0.2s ease;
+}
+
+.terms-agree a:hover {
+    color: var(--primary-color);
+}
+
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////// */
+
+/* LOG IN */
+
+.form-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+}
+
+.form-left-side {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 100%;
+}
+.login-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap:30px;
+    border: 1px solid var(--primary-color);
+    padding: calc(var(--padding) * 2);
+    border-radius: var(--border-radius);
+    background-color: var(--card-lighter-background);
+    box-shadow: var(--card-shadow);
+    color: white;
+}
+
+.login-form .form-title {
+    font-size: 2.1rem;
+    font-weight: 500;
+}
+.login-form .create-account {
+    opacity: 0.8;
+}
+
+.login-form .create-account a {
+    text-decoration: underline ;
+    color: var(--primary-color);
+    opacity: 0.9;
+    transition: opacity 0.2s ease;
+}
+
+.login-form .create-account a:hover {
+   opacity: 1;
+}
+
+.login-form .form-button {
+    background-color: var(--primary-color);
+    color: white;
+    font-family: 'Poppins', sans-serif ;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    transition: all 0.2s ease;
+}
+
+
+.login-form .form-button:hover {
+    /* background-color: var(--button-header-hover); */
+    filter: brightness(1.2);
+}
+
+.login-form .forgot-password {
+    color: var(--description-color);
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+
+.login-form .forgot-password:hover {
+    color: #ccc
+}
+
+.or-section {
+    display: flex;
+    align-items: center;
+    gap:10px;
+}
+.or-section span {
+    width: 50%;
+    height: 1px;
+    background-color: var(--description-color);
+    display: block;
+    opacity: 0.5;
+}
+
+.or-section p {
+    opacity: 0.4;
+    font-weight: 700;
+    font-size: 0.9rem;
+}
+
+.google-sign-in {
+    align-self: center;
+    width: 100%;
+    display: flex;  
+}
+.google-sign-in button {
+
+    background-color: var(--card-background);
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary-color);
+    color: white;
+    transition: all 0.2s ease;
+}
+.google-sign-in button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+.google-sign-in img {
+    height: 25px;
+    width: 25px;
+}
+.form-right-side {
+    background: linear-gradient(140deg,rgba(220,234,246,.665),rgba(162,202,236,.677));
+    width: 60%;
+    height: 100%;
+    overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.animation-left,.animation-right {
+    flex-basis: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.animation-left img,.animation-right img {
+    width: 100%;
+    height: 400px;
+    border-radius: var(--border-radius);
+}
+.slide-animation-left {
+    animation: slide-in-left 60s linear infinite;
+    animation-play-state: running;
+}
+.slide-animation-right {
+    animation: slide-in-right 60s linear infinite;
+    animation-play-state: running;
+}
+  @keyframes slide-in-left {
+    0% {
+      transform: translateY(-100%);
+    }
+    100% {
+      transform: translateY(100%);
+    }
+  }
+
+  @keyframes slide-in-right {
+    0% {
+      transform: translateY(100%);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* SIGN UP */
+
+.sign-up-container {
+    align-items: center;
+    justify-content: center;
+}
+.sign-up-form {
+    width: 30%;
+}
+
+.password-contain {
+    width: 100%;
+}
+.password-contain ul {
+    list-style: none;
+}
+.verify-password {
+    color: var(--error-color) ;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.true {
+    color: var(--primary-color);
+}
+
+.error {
+    color: var(--error-color);
+    font-size: 0.9rem;
+}
+
+.succes {
+    color: var(--primary-color);
+    font-size: 0.9rem;
+}
+
+/* ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* RESPONSIVE */
+
+
+@media screen and (max-width:999px) {
+    .animation-left {
+        flex-basis: 100%;
+    }
+    .sign-up-form {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .form-left-side {
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:576px) {
+    .form-left-side {
+        width: 100%;
+        align-items: center;
+    }
+    .sign-up-form {
+        width: 80%;
+    }
+}

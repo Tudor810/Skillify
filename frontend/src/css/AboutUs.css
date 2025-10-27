@@ -1,0 +1,346 @@
+.about-us {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:150px;
+    color: white;
+    z-index: 0;
+    max-width: 1640px;
+    position: relative;
+}
+
+
+.flip-boxes
+{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.main-container {
+    position: relative;
+    width: 100%;
+    height: 350px;
+}
+
+.first-flipbox, .second-flipbox {
+    width: 100%;
+    /* margin-top: 150px; */
+    display: flex;
+
+}
+
+.first-flipbox .about-us-card {
+    margin-left: 200px;
+}
+
+.second-flipbox {
+    justify-content: flex-end;
+}
+.second-flipbox .about-us-card {
+    margin-right: 200px;
+}
+.about-us .about-us-card {
+    width: 30%;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+.about-us-card {
+    height: 500px;
+}
+.about-us-card img {
+    border-radius: var(--border-radius);
+    width: 80%;
+}
+.flashcard {
+    width: 100%;
+    height: 100%;
+    border: 1px solid var(--primary-color);
+    border-radius: var(--border-radius);
+}
+
+.main-container .flip-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.7s ease-in-out;
+    cursor: pointer;
+}
+
+.flip-card:hover {
+    transform: rotateY(180deg);
+}
+
+.hover {
+    transform:rotateY(180deg) ;
+}
+
+.front-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+
+/* .front-card img {
+    height: 400px;
+    width: 400px;
+} */
+.back-card {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+}
+
+.front-card, .back-card {
+    /* padding: var(--padding); */
+    border-radius: var(--border-radius);
+    /* background-color:white; */
+    background-color: var( --card-background);
+    box-shadow: var(--card-shadow);
+}
+
+.about-us .footer {
+    margin-top: 25px;
+    border-top: 1px solid white;
+}
+.front-card .card-content, .back-card .card-content { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: var(--padding);
+    gap: 15px;
+    color: white;
+    text-align: center;
+    
+}
+
+.front-card .card-content i {
+    font-size: 5rem;
+}
+.back-card .card-content ul {
+    margin-left: 15px;
+    list-style: none;
+}
+.back-card .home-button {
+    width: 100%;
+    margin-top: auto;
+}
+.card-content p {
+    text-transform:unset;
+}
+.skillify {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.skillify strong {
+    color: var(--primary-color);
+}
+
+.skillify p {
+    font-size: 1.1rem;
+}
+
+.tabs-container {
+    padding: var(--padding);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+}
+.tabs {
+    display: flex;
+    flex-direction: column;
+    max-width: 1200px;
+    gap: 20px;
+}
+.tabs-navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 -10px;
+
+}
+
+.tabs-navbar li {
+    cursor: pointer;
+    flex: 0 0 25%;
+    padding: 0 10px;
+}
+
+.tabs-navbar li .tab-text {
+    padding-block: calc(var(--padding) * 2);
+    border-radius: var(--border-radius);
+    background-color: #001033;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px ;
+    position: relative;
+    transition: all 0.2s ease;
+}
+.tabs-navbar li .tab-text:hover {
+    color: var(--primary-color);
+}
+.tabs-navbar .tab-active .tab-text {
+    color: var(--primary-color);
+}
+.tabs-navbar .tab-active .tab-text::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -30px;
+    left: 0;
+    width: 100%;
+    background-color: #001033;
+    height: 50px;
+    z-index: -1;
+}
+.tabs-content {
+    background-color: #001033;
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+}
+.personalized-lessons, .specialized-tools, .growing-community, .more-are-on-the-way {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.item-container {
+    display: flex;
+
+}
+
+.item-left {
+    flex: 0 0 35%;
+}
+
+.item-left img {
+    width: 100%;
+    height: 100%;
+    border-radius: var(--border-radius);
+}
+
+.item-right {
+    flex: 0 0 65%;
+    text-align: left;
+    padding-left: 25px;
+}
+
+.item-right h1 {
+    padding-top: 10px;
+    padding-bottom: 30px;
+    line-height: 50px;
+}
+.item-right p {
+    line-height: 140%;
+}
+@media screen and (max-width: 1600px) {
+    .about-us-card {
+        height: 500px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .about-us .about-us-card {
+        width: 50%;
+    }
+    .first-flipbox, .second-flipbox {
+        align-items: center;
+        justify-content: center;
+    }
+    .first-flipbox .about-us-card {
+        margin-left: 0;
+    }
+
+    .second-flipbox .about-us-card {
+        margin-right: 0;
+    }
+
+    .tabs-navbar {
+        flex-direction: column;
+    }
+
+    .tabs-navbar li {
+        width: 100%;
+        padding-bottom: 10px;   
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .tabs-navbar .tab-active .tab-text {
+        box-shadow: 0px 4px 4px rgba(150, 150, 150, 0.1);
+        border-bottom-left-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .tabs-navbar .tab-active .tab-text::after {
+        display: none;
+    }
+
+    .item-container {
+        flex-direction: column;
+    }
+
+    .item-left {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .item-left img {
+        width: 75%;
+        
+    }
+
+
+}
+@media screen and (max-width: 700px) {
+    .about-us .about-us-card {
+        width: 75%;
+    }
+    .skillify p {
+        font-size: 1.2rem;
+    }
+
+    .item-left img {
+        width: 100%;   
+    }
+}
+@media screen and (max-width: 500px) {
+    .skillify p {
+        font-size: 1rem;
+    }
+
+    .skillify h1 {
+        font-size: 1.6rem;
+    }
+}
+.flashcard {
+    height: 600px;
+}
+
+.swiper-container .swiper-button-next, .swiper-container .swiper-button-prev {
+    color: white;
+}
+
+@media screen and (max-width: 500px) {
+    .flashcard {
+        height: 700px;
+    }
+}

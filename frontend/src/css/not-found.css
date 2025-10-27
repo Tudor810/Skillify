@@ -1,0 +1,92 @@
+.not-found {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 100px;
+    gap: 15px;
+    justify-content: center;
+    top: -100px;
+}
+
+.not-found-card {
+    background-color: var(--card-background);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--primary-color);
+    width: 50%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.error-404 {
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+.not-found span {
+    width: 100%;
+}
+
+.not-found span ul li {
+    margin-left: 25px;
+}
+
+.not-found .not-found-button {
+    background-color: var(--primary-color);
+    text-transform: capitalize;
+    width: 100%;
+}
+
+
+/* /////////////////////////////////////////////////////////////////////////////////////// */
+
+/* Unauthorized */
+
+.unauthorized {
+    margin-top: 100px;
+    display: flex;
+    width: 100%;
+    height: 56.7vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.unauthorized-card {
+    box-shadow: var(--card-shadow);
+    border-radius: var(--border-radius);
+    background-color: var(--card-background);
+    padding: var(--padding);
+    width: 25%;
+    height: 30%;
+    color: white;
+    border: 1px solid var(--primary-color);
+}
+
+.unauthorized-card a {
+    color: var(--primary-color);
+}
+.unauthorized-card a:hover {
+    color: var(--button-hover);
+}
+
+@media screen and (max-width: 999px){
+    .unauthorized-card {
+        width: 50%;
+    }
+    .not-found-card {
+        width: 75%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    .unauthorized-card {
+        width: 90%;
+    }
+    .not-found-card {
+        width: 90%;
+    }
+}

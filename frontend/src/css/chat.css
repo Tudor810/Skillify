@@ -1,0 +1,283 @@
+.chat-page {
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    padding: var(--padding);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+
+.chat-page .chat-section {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search-add {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.add-thread-button {
+    background-color: var(--card-lighter-background);
+    border: 1px solid var(--primary-color);
+    color: white;
+    transition: all 0.2s ease;
+    width: 90%;
+    max-width: 450px;
+}
+
+.add-thread-button:hover {
+    cursor: pointer;
+    filter: brightness(1.2);
+}
+.chat-section .search-thread {
+    width: 90%;
+    max-width: 500px;
+}
+
+.chat-section .search-thread div {
+    border-radius: 25px;
+    color: white;
+}
+
+.chat-section .search-thread div fieldset {
+    border-color: rgba(255, 255, 255, 0.7) !important;
+    transition: all 0.2s ease;
+}
+
+.chat-section .search-thread div:hover fieldset {
+    border-color: rgba(255, 255, 255, 1) !important;
+}
+
+/* //////////////////////////////////////////////////////////////////////// */
+
+
+/* ADD THREAD */
+
+.add-thread-container {
+    width: 100%;
+    height: 100%;
+    background-color: var(--card-lighter-background);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+}
+
+.add-thread-container .text-input {
+    width: 90%;
+}
+
+.add-thread-container .add-thread-button {
+    width: 50%;
+    background-color: var(--card-background);
+}
+
+
+.threads {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+}
+
+.thread-section .thread {
+    width: 100%;
+}
+.thread {
+    width: 90%;
+    max-width: 800px;
+    padding: var(--padding);
+    padding-inline: calc(var(--padding) * 2);
+    border-radius:var(--border-radius);
+    box-shadow: var(--card-shadow);
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    transition: all 0.2s ease;
+    background-color: var(--card-lighter-background);
+}
+
+.thread:hover {
+    background-color: var(--card-background);
+    cursor: pointer;
+}
+.user-information {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+.user-information span {
+    color: var(--description-color);
+    font-size: 0.7rem;
+}
+.user-information img {
+    border-radius: 50%;
+    width: 50px;
+}
+
+.thread-content {
+    color: white;
+}
+
+.action-section {
+    margin-top: auto;
+    display: flex;
+    gap: 50px;
+}
+
+.action-section .like-section, .action-section .comment-section {
+    display: flex;
+    background-color: #3b3750;
+    padding: calc(var(--padding) / 2);
+    padding-inline: var(--padding);
+    border-radius: calc((var(--border-radius) * 4));
+    align-items: center;
+    gap: 15px;
+    font-size: 0.9rem;
+    color:white;
+}
+
+.red {
+    color: red;
+}
+
+.thread-page {
+    width: 100%;
+    min-height: 100%;
+    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.thread-section {
+    width: 90%;
+    max-width: 800px;
+    min-height: 700px;
+    border-radius: var(--border-radius);
+    background-color: var(--card-lighter-background);
+    display: flex;
+    flex-direction: column;
+}
+
+.thread-section .thread {
+    border-radius: 0;
+    background-color: transparent;
+    box-shadow: none;
+}
+
+.comments-section {
+    width: 100%;
+    padding: var(--padding);
+    display: flex;
+
+    flex-direction: column;
+}
+
+.text-input {
+    position: relative;
+}
+.lessons-section .lessons-textarea .comment-button {
+
+    gap: 25px;
+    width: 100%;
+    background-color: #3b3750;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: auto;
+    border-radius: 0;
+    border-bottom-left-radius: var(--border-radius);
+    border-bottom-right-radius: var(--border-radius);
+}
+
+.lessons-section .lessons-textarea .comment-button button {
+    margin-right: 25px;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    background-color: var(--card-lighter-background);
+    color: white;
+    transition: all 0.2s ease;
+}
+.lessons-section .lessons-textarea .comment-button button:hover {
+    filter: brightness(1.2);
+}
+
+.comment-textarea {
+    display: flex;
+    flex-direction: column;
+    padding: 0 !important; 
+}
+
+.add-comment .lessons-section {
+    height: 100%;
+    min-height: 200px;
+    max-height: 600px;
+}
+.lessons-section .comments-textarea {
+    min-height: 100%;
+}
+.lessons-section .lessons-textarea .textarea-container {
+    width: 100%;
+}
+
+.lessons-section .lessons-textarea .textarea-container textarea {
+    min-height: 100%;
+    max-height: 400px;
+    font-size: 1rem;
+}
+
+.comments {
+    width: 100%;
+    min-height: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    margin-top: 25px;
+}
+.comment {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.comment .user-information img {
+    width: 25px;
+}
+
+.comment .main-comment {
+    color: white;
+}
+
+.comment .action-section {
+    color: white;
+    gap: 15px;
+}
+
+.comment .action-section .like, .comment .action-section .reply {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.comment .action-section .reply span{
+    color: var(--description-color);
+}

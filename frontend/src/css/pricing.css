@@ -1,0 +1,592 @@
+.pricing-page {
+    height: 100%;
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    max-width: 1400px;
+    padding: var(--padding);
+    color: white;
+    align-items: center;
+}
+
+
+.pricing-page .pricing-cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 50px;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 20px;   
+}
+
+.pricing-text {
+    text-align: center;
+}
+
+.pricint-text h1 {
+    font-size: 2rem;
+}
+.pricing-text p {
+    font-size: 1.2rem;
+    color: var(--description-color);
+}
+.pricing-select {
+   display: flex;
+   align-items: center;
+   gap: 10px;
+}
+
+.switch {
+    border-radius: calc(var(--border-radius) * 4);
+    width: 80px;
+    height: 40px;
+    background-color: var(--card-background);
+    border: 1px solid var(--primary-color);
+    padding: calc(var(--padding) / 4);
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: flex-start;     
+    position: relative;
+}
+
+.info-left, .info-right {
+    opacity: 0.6;
+}
+
+.info-left {
+    margin-left: 7px;
+}
+
+.info-right {
+    margin-left: auto;
+    margin-right: 7px;
+}
+.switch-right {
+    justify-content: flex-end;
+}
+.handle {
+    border-radius: 50%;
+    background-color: var(--card-lighter-background);
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    /* width: var(--switch-distance); */
+}
+
+.fa-fire-flame-simple {
+    position: absolute;
+    font-size: 0.6rem;
+    bottom: 3px;
+    rotate: 225deg;
+    left: 4px;
+}
+
+.change-rocket {
+    font-size: 0.9rem;
+    position: absolute;
+    top: 4px;
+    left: 8px;
+}
+
+@media screen and (max-width: 1800px) {
+    .change-rocket {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1600px) {
+    .change-rocket {
+        font-size: 1.1rem;
+        left: 9px;
+        top: 5px;
+    }
+
+    .fa-fire-flame-simple {
+        bottom: 4px;
+        left: 5px;
+    }
+}
+.month-inactive,.year-inactive{
+    opacity: 0.7;
+}
+/* /////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.FAQ-page {
+    margin-top: 100px;
+}
+
+.FAQ-pricing {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap:50px;
+}
+
+.FAQ-pricing span a {
+    color: white;
+}
+
+.FAQ-title {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.FAQ-title h2 {
+    font-size: 2rem;
+    color: white;
+}
+
+.FAQ-title h4 {
+    color: rgba(200,200,200,0.9);
+    font-weight: 400;
+}
+.FAQ-title h4 > p {
+    display: inline-block;
+    color: white;
+}
+
+.FAQ-title h4 a {
+    color:white
+}
+
+.FAQ-title h4 a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.FAQ-title h4 > p:hover {
+    cursor: pointer;
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.all-questions {
+    list-style: none;
+    display: flex;
+    gap: 50px;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+ 
+}
+
+.question-container {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    /* border-bottom: 1px solid var(--description-color); */
+    border: 1px solid var(--primary-color);
+    background-color: var(--card-background);
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+.question-container .top-part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.question-container .top-part h3 {
+    font-weight: 500;
+    font-size: 1.3rem
+}
+
+.question-container .top-part i {
+    font-size: 1.3rem;
+}
+
+.question-container .answear {
+    margin-bottom: 20px;
+}
+
+.FAQ-pricing span a {
+    transition: color 0.2s ease,text-decoration 0.2s ease;
+}
+
+.FAQ-pricing span a:hover {
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.FAQ-page .all-questions .question-container:last-child {
+    margin-bottom: 100px;
+}
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+
+/* PRICING SMALL */
+
+.pricing-small-top {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-small-elements {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.small-card {
+    width: 100%;
+    background-color: rgb(240,240,240);
+    padding:calc(var(--padding) / 2);
+    display: flex;
+    gap: 15px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.small-card:hover {
+    transform: scale(1.05);
+}
+.small-card div > h3 {
+    margin-bottom: 10px;
+}
+.icon {
+    background-color: rgba(146, 3, 255, 0.19);
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: var(--border-radius);
+}
+.pricing-small-elements .small-card:nth-child(2) .icon {
+    background-color: rgba(255, 108, 52, 0.19);
+}
+.pricing-small-elements .small-card:nth-child(2) .icon > div {
+    background-color: rgb(255, 108, 52);
+}
+
+.pricing-small-elements .small-card:last-child .icon {
+    background-color: rgba(255, 52, 114, 0.19);
+}
+.pricing-small-elements .small-card:last-child .icon > div {
+    background-color: rgb(255, 52, 114);
+}
+.icon > div {
+    height: 1.3rem;
+    width: 1.3rem;
+    background-color: rgb(146, 3, 255);
+    rotate: 45deg;
+    border-radius: calc(var(--border-radius) / 2);
+}
+.price {
+    align-self: center;
+    margin-left: auto;
+    font-weight: 700;
+}
+
+.link-container {
+    width: 100%;
+    background-color: rgb(240,240,240);
+    display: block;
+    margin-top: 15px;
+    border-radius: var(--border-radius);
+    display: flex;
+    padding: calc(var(--padding) / 2);
+    justify-content: space-between;
+    transition: all 0.2s ease;
+}
+
+.link-container:hover {
+    transform: scale(1.05);
+}
+.cancel-button-container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-top: 15px;
+}
+.cancel-button-container .cancel-button {
+    position: static;
+    border-radius: 0;
+    width: auto;
+    height: auto;
+    background-color: rgb(235,235,235);
+    border-radius: calc(var(--border-radius) / 2);
+    padding-inline: var(--padding);
+    text-transform: capitalize;
+    color: black;
+}
+
+.cancel-button-container .cancel-button:active {
+    background-color: rgb(180,180,180);
+}
+
+
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.buy-succes {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#card {
+    position: relative;
+    width: 320px;
+    display: block;
+    margin: 40px auto;
+    text-align: center;
+}
+#upper-side {
+    padding: 2em;
+    background-color: #8BC34A;
+    display: block;
+    color: #fff;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+  }
+
+#upper-side .fa-check {
+    font-size: 2.5rem;
+
+}
+
+#status {
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 1em;
+    margin-top: -.2em;
+    margin-bottom: 0;
+  }
+
+  #lower-side {
+    padding: 2em 2em 5em 2em;
+    background: #fff;
+    display: block;
+    border-bottom-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+  #message {
+    margin-top: -.5em;
+    color: #757575;
+    letter-spacing: 1px;
+  }
+
+  #contBtn {
+    position: relative;
+    top: 1.5em;
+    text-decoration: none;
+    background: #8bc34a;
+    color: #fff;
+    margin: auto;
+    padding: .8em 3em;
+    -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+    -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+    box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.21);
+    border-radius: 25px;
+    -webkit-transition: all .4s ease;
+          -moz-transition: all .4s ease;
+          -o-transition: all .4s ease;
+          transition: all .4s ease;
+  }
+  #contBtn:hover {
+    -webkit-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+    -moz-box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+    box-shadow: 0px 15px 30px rgba(50, 50, 50, 0.41);
+    -webkit-transition: all .4s ease;
+          -moz-transition: all .4s ease;
+          -o-transition: all .4s ease;
+          transition: all .4s ease;
+  }
+
+/* //////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.manage-account {
+    display: flex;
+    flex-direction: column;
+    gap:15px;  
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.manage-account .configure-payment-button {
+    width: 100%;
+    color: white;
+    background-color: var(--card-lighter-background);
+    border: 1px solid var(--primary-color);
+    text-transform: capitalize;
+    transition: all 0.2s ease;
+}
+.manage-account .configure-payment-button:hover {
+    filter: brightness(1.2);
+}
+
+.request-refund-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.text-section {
+    text-align: center;
+}
+.text-section a {
+    font-size: 0.8rem;
+    color: #757575;
+    transition: all 0.2s ease;
+}
+
+.text-section a:hover {
+    color: #404040;
+}
+
+.refund-button {
+    width: 80%;
+    background-color: var(--primary-color);
+    color: white;
+    text-transform: capitalize;
+}
+
+.refund-button:hover {
+    background-color: var(--button-hover);
+}
+
+.refund-button:active {
+    background-color: var(--button-active);
+}
+
+.refund-policy {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    justify-content: center;
+    max-width: 75%;
+    margin-bottom: 50px;
+    color: white;
+}
+
+.refund-policy a {
+    color: var(--primary-color);
+}
+
+.price-off-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 20px;
+    text-align: center;
+
+}
+
+.price-off-content .main-titles span {
+    font-weight: 700;
+    color: white;
+}   
+.price-off-content img{
+    width: 50%;
+}
+
+.price-off-content h1 {
+    font-size: 3.5rem;
+}
+.price-off-content p {
+    font-size: 1.5rem;
+}
+.using-code {
+    color: #A1AEBF;
+}
+.price-off-content button {
+    background-color: var(--card-background);
+    color: white;
+    box-shadow: var(--card-shadow);
+    width: 75%;
+    border: 1px solid var(--primary-color);
+    cursor: pointer;
+    transition: all 0.2s ease;
+    animation: infinite 2s pulse;
+}
+.price-off-content button:hover {
+    filter: brightness(1.2);
+    animation: none;
+}
+
+.price-off-content h2 {
+    font-size: 4.5rem;
+    color: var(--primary-color);
+}
+
+.reedems-left p{
+    font-size: 1.5rem;
+}
+
+.price-off-content .no-thanks {
+    font-size: 0.9rem;
+    color: #A1AEBF;
+    cursor: pointer;
+}
+.price-off-content .no-thanks:hover {
+    text-decoration: underline;
+}
+
+.price-off-content .background-price-off{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+    opacity: 0;
+    transition: opacity 0.25s ease;
+}
+.price-off-content .background-price-off-small {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+.background-price-off.loaded {
+    opacity: 1;
+}
+
+.price-off-container {
+    opacity: 0;
+    transition: opacity 0.25s ease;
+    z-index: 1;
+}
+
+.price-off-container.loaded {
+    opacity: 1;
+}
+/* RESPONSIVE */
+
+@media screen and (max-width: 576px) {
+    .pricing-page .pricing-cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .FAQ-title h2 {
+        text-align: center;
+    }
+    .question-container {
+        width: 90%;
+    }
+}
+
