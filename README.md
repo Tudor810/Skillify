@@ -15,10 +15,11 @@ It uses OpenAI’s language model (LLM) to explain concepts, quiz you, and adapt
 
 🛠️ Tech Stack
 
-Frontend: React
-Backend: Node.js / Express
-DataBase: MongoDb
-AI Engine: OpenAI API (GPT model)
+1. Frontend: React
+2. Backend: Node.js / Express
+3. DataBase: MongoDb
+4. AI Engine: OpenAI API (GPT model)
+5. RSA public/private key for user authentification
 
 Version Control: Git & GitHub
 
